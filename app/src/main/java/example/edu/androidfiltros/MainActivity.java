@@ -19,7 +19,8 @@ public class MainActivity extends AppCompatActivity {
         filtros=new Filtros();
 
         BitmapDrawable bitmapDrawable=(BitmapDrawable) imageView.getDrawable();
-        Bitmap bmp=filtros.greyScale(bitmapDrawable.getBitmap());
+        //Bitmap bmp=filtros.greyScale(bitmapDrawable.getBitmap());
+        Bitmap bmp=filtros.invert(bitmapDrawable.getBitmap());
         imageView.setImageBitmap(bmp);
 
     }
