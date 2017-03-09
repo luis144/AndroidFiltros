@@ -12,30 +12,101 @@
     tools:context="example.edu.androidfiltros.MainActivity">
 
 
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignParentEnd="true"
+        android:onClick="main2"
+        android:text="RGB" />
 
-    <ScrollView
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="@android:style/Widget.Material.SeekBar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="28dp"
+        android:max="255"
+        android:progress="1"
+        tools:targetApi="n" />
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        app:srcCompat="@drawable/israel" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:text="contraste" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="34dp">
+        android:onClick="invert"
+        android:text="Invert" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/imagen"
-                android:src="@drawable/dubai"
-                />
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/imagen2"
-                android:src="@drawable/dubai" />
-            </LinearLayout>
-    </ScrollView>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="grey"
+        android:text="Grey" />
+
+    <SeekBar
+        android:id="@+id/seekBar2"
+        style="@android:style/Widget.Material.Light.SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imagen"
+        android:layout_marginTop="51dp"
+        android:max="255"
+        android:progress="1" />
+
+    <SeekBar
+        android:id="@+id/seekBar3"
+        style="@android:style/Widget.Material.SeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button3"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:max="255"
+        android:progress="1" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/seekBar2"
+        android:layout_marginTop="19dp"
+        android:text="Brillo" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekBar3"
+        android:layout_alignParentStart="true"
+        android:text="Dteccion de Orillas" />
 
 </RelativeLayout>
