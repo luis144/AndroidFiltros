@@ -393,7 +393,7 @@ public class Filtros {
 
 
                 //-------fin
-                //se vuelve a codificar el pixel
+                //se vuelve a codificar el pixel y se termina
 
 
                 //se agrega el pixel en el bitmap destino
